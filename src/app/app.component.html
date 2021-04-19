@@ -1,5 +1,7 @@
 
 <div *ngFor="let user of users">
+
+  <!-- photoUrl is mandatory to add and do not add direct link in the attribute-->
   <app-avatar-photo [photoUrl] = "user.photo" [name]="user.name"></app-avatar-photo> 
   {{user.name}}
   <br>
